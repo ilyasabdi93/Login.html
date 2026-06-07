@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Login</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<div id="g_id_onload"
+     data-client_id="100389473721-haop8ljrrn97gocn32dp7vude57hdmio.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse">
+</div>
+
+<div class="g_id_signin"></div>
+
+<script>
+function handleCredentialResponse(response) {
+    console.log(response.credential);
+    alert("Login Success!");
+}
+</script>
+
+</body>
+</html>
